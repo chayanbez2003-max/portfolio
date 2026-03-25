@@ -49,7 +49,7 @@ const Home = () => {
               </div>
 
               <p className="text-gray-400 text-sm md:text-base leading-relaxed max-w-lg">
-                Emerging MERN-stack developer with strong problem-solving skills and hands-on experience in
+                Emerging Full-stack developer with strong problem-solving skills and hands-on experience in
                 JavaScript, React, Node.js, Express.js and databases. Driven to adapt quickly to new technologies
                 and build scalable, impactful products.
               </p>
@@ -57,7 +57,9 @@ const Home = () => {
               {/* CTA Buttons */}
               <div className="flex flex-wrap gap-4">
                 <a
-                  href="#Contact"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=bezchayan@gmail.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="px-7 py-3 rounded-full font-semibold text-white transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/40"
                   style={{ background: 'linear-gradient(135deg, #7c3aed, #06b6d4)' }}
                 >
@@ -123,7 +125,7 @@ const Home = () => {
 
               {/* Stats badges */}
               <div className="absolute top-4 -right-4 md:right-8 glass rounded-2xl px-4 py-3 text-center">
-                <p className="text-2xl font-bold gradient-text">2+</p>
+                <p className="text-2xl font-bold gradient-text">3+</p>
                 <p className="text-xs text-gray-400">Years Coding</p>
               </div>
               <div className="absolute bottom-8 -left-4 md:left-8 glass rounded-2xl px-4 py-3 text-center">

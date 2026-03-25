@@ -13,6 +13,7 @@ const Project = () => {
       description:
         "A full-stack resume builder built with React, Tailwind CSS, Node.js, Express, MongoDB, and ImageKit, featuring dynamic templates and AI-assisted content enhancement.",
       github: "https://github.com/chayanbez2003-max/resume_builder",
+      live:"https://resumebuilder-max.netlify.app/",
       tags: ["React", "Node.js", "MongoDB", "AI"],
       gradient: "from-purple-600/20 to-cyan-500/20",
       accent: "border-purple-500/30",
@@ -24,6 +25,7 @@ const Project = () => {
       description:
         "A visually engaging GTA-VI inspired landing page built using HTML, CSS, JavaScript, and GSAP animations with stunning visual effects.",
       github: "https://github.com/chayanbez2003-max/GTA-VI-",
+      live:"https://chayanbez2003-max.github.io/GTA-VI-/",
       tags: ["HTML", "CSS", "GSAP", "JavaScript"],
       gradient: "from-orange-600/20 to-red-500/20",
       accent: "border-orange-500/30",
@@ -35,6 +37,7 @@ const Project = () => {
       description:
         "A full-featured video streaming platform where users can upload, stream, and manage videos with authentication and cloud storage integration.",
       github: "https://github.com/chayanbez2003-max/vidTube",
+      live:"https://vidtube2003.netlify.app/",
       tags: ["React", "Node.js", "MongoDB", "Express"],
       gradient: "from-pink-600/20 to-violet-500/20",
       accent: "border-pink-500/30",
@@ -59,7 +62,7 @@ const Project = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
-          {cardItems.map(({ id, logo, name, description, github, tags, gradient, accent }) => (
+          {cardItems.map(({ id, logo, name, description, github, live, tags, gradient, accent }) => (
             <div
               key={id}
               className={`glass rounded-2xl overflow-hidden border ${accent} hover:shadow-xl hover:shadow-purple-900/20 hover:-translate-y-2 transition-all duration-300 group flex flex-col`}
@@ -96,17 +99,31 @@ const Project = () => {
                   ))}
                 </div>
 
-                {/* Action */}
-                <a
-                  href={github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-sm font-semibold text-white w-fit px-5 py-2 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30"
-                  style={{ background: 'linear-gradient(135deg, #7c3aed, #06b6d4)' }}
-                >
-                  <FaGithub className="text-base" />
-                  View on GitHub
-                </a>
+                {/* Actions */}
+                <div className="flex items-center gap-3 flex-wrap">
+                  <a
+                    href={github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-sm font-semibold text-white w-fit px-5 py-2 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/30"
+                    style={{ background: 'linear-gradient(135deg, #7c3aed, #06b6d4)' }}
+                  >
+                    <FaGithub className="text-base" />
+                    GitHub
+                  </a>
+                  {live && (
+                    <a
+                      href={live}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-sm font-semibold w-fit px-5 py-2 rounded-full border transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/30"
+                      style={{ borderColor: 'rgba(6,182,212,0.5)', color: '#22d3ee', background: 'rgba(6,182,212,0.08)' }}
+                    >
+                      <FaExternalLinkAlt className="text-sm" />
+                      Live Demo
+                    </a>
+                  )}
+                </div>
               </div>
             </div>
           ))}

@@ -47,7 +47,7 @@ const About = () => {
 
             <div className="text-center lg:text-left space-y-2 mb-8">
               <p className="text-gray-400"><span className="font-semibold text-purple-400">Name:</span> <span className="text-white">Chayan Bez</span></p>
-              <p className="text-gray-400"><span className="font-semibold text-purple-400">Role:</span> <span className="text-white">MERN Stack Developer</span></p>
+              <p className="text-gray-400"><span className="font-semibold text-purple-400">Role:</span> <span className="text-white">Full Stack Developer</span></p>
               <p className="text-gray-400"><span className="font-semibold text-purple-400">Location:</span> <span className="text-white">Kolkata, India</span></p>
             </div>
 
@@ -84,10 +84,10 @@ const About = () => {
 
             <div className="glass rounded-2xl p-6 space-y-4">
               {[
-                { label: "Profile", value: "MERN Stack Development" },
+                { label: "Profile", value: "Full Stack Development" },
                 { label: "Education", value: "B.Tech in Computer Science" },
                 { label: "Languages", value: "English, Hindi, Bengali" },
-                { label: "Other Skills", value: "Java, DSA, Web Development" },
+                { label: "Other Skills", value: "Java, DSA, System Design" },
                 { label: "Interests", value: "Cricket, Books, International Relations" },
               ].map(({ label, value }) => (
                 <div key={label} className="flex gap-4 border-b border-white/5 pb-4 last:border-0 last:pb-0">
